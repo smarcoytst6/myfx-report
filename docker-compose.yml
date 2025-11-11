@@ -1,0 +1,14 @@
+﻿services:
+  app:
+    build: .
+    container_name: mql5-gunicorn
+    restart: unless-stopped
+    expose:
+      - "8000"
+    networks:
+      - mql5-net
+
+networks:
+  mql5-net:
+    external: true
+    driver: bridge

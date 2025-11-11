@@ -1,0 +1,20 @@
+# 1. Create the folder locally (if you haven’t already)
+mkdir D:\github\myfx-report
+cd D:\github\myfx-report
+
+# 2. Copy all files from D:\docker_myfx into this folder
+xcopy D:\docker_myfx\* . /E /Y
+
+  git config --global user.email "smarcoytst6@gmail.com"
+  git config --global user.name "smarcoytst6"
+
+# 3. Init git, add everything, commit
+git init
+git add .
+git commit -m "Initial commit – production-ready MyFX Report"
+
+# 4. Create repo on GitHub (web UI) → name: myfx-report, public/private as you wish
+# 5. Link & push
+git remote add origin https://github.com/smarcoytst6/myfx-report.git
+git branch -M main
+git push -u origin main

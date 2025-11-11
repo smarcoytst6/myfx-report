@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# VS Code / IDE
+.vscode/
+.idea/
+
+# Local data
+data.json
+response.json
